@@ -1,0 +1,7 @@
+Multitasking-Here, several processes in the system are executed quasi-parallel (also called “interleaved” or “concurrent”) by constantly changing the process being executed on one CPU.
+Multiprocessing-If there is more than one CPU or multiple cores in a system, multitasking is extended to multiprocessing, which enables true parallel processing.
+Polling-Actively waiting by continuously querying the status of an I/O operation is called polling. The disadvantage of this approach is that the CPU is busy waiting and therefore unavailable for other processes.
+Preemptive Multitasking- The mechanism for switching between several processes within the system is also called cooperative multitasking, as the processes allow each other to use the CPUs through system calls. 
+Time slice-This is the maximum amount of time a process can be worked on by the CPU before the operating system regains control.
+Threads-As previously mentioned, every process change consumes a certain amount of computing time, and there are often several tasks within a program (and therefore within a process) than cannot necessarily be processed sequentially. Rather, they concurrently and, thus, quasi-parallel.
+Thread programming-Special application programming interfaces (APIs)  program threads of execution, which comprise a sequence of instructions within a process. After each sequence, a thread change can take place. example-chat
